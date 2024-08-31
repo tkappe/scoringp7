@@ -31,8 +31,8 @@ jobs:
 
 ### ⬇ IMPORTANT PART ⬇ ###
       # If tests pass, proceed to build, push and release a Docker container to Heroku.
-      - name: Build, Push and Release a Docker container to Heroku. # Your custom step name
-        uses: gonuit/heroku-docker-deploy@v1.3.3 # GitHub action name (leave it as it is).
+      - name: Deploy to Heroku. # Your custom step name
+        uses: akhileshns/heroku-deploy@v3.12.12 # GitHub action name (leave it as it is).
         with:
           # Below you must provide variables for your Heroku app.
 
