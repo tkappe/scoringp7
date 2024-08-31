@@ -32,14 +32,14 @@ jobs:
 ### ⬇ IMPORTANT PART ⬇ ###
       # If tests pass, proceed to build, push and release a Docker container to Heroku.
       - name: Deploy to Heroku. # Your custom step name
-        uses: akhileshns/heroku-deploy@v3.12.12 # GitHub action name (leave it as it is).
+        uses: akhileshns/heroku-deploy@v3.13.15 # GitHub action name (leave it as it is).
         with:
           # Below you must provide variables for your Heroku app.
 
           # The email address associated with your Heroku account.
           # If you don't want to use repository secrets (which is recommended) you can do:
           # email: my.email@example.com
-          email: ${{ secrets.HEROKU_EMAIL }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
@@ -65,6 +65,6 @@ jobs:
           # Select the process type for which you want the docker container to be uploaded.
           # By default, this argument is set to "web".
           # For more information look at https://devcenter.heroku.com/articles/process-model
-          process_type: web
+          
                    
 ### ⬆ IMPORTANT PART ⬆ ###
