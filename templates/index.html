@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scoring P7</title>
+</head>
+<body>
+    <h1>Scoring P7</h1>
+    <form action="/predict" method="post">
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" name="client_id" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if error_message %}
+        <p style="color:red;">{{ error_message }}</p>
+    {% endif %}
+    
+    {% if message %}
+        <h2>Results for Client ID {{ client_id }}</h2>
+        <p>Probability of default: {{ probability }}</p>
+        <p>Class: {{ score }}</p>
+        <p>Decision: {{ message|safe }}</p>
+    {% endif %}
+</body>
+</html>
