@@ -8,6 +8,6 @@ L’API que nous avons construit prend en entrée l’identifiant d’un client 
 
 Les données originales sont téléchargeables sur Kaggle ici : https://www.kaggle.com/c/home-credit-default-risk/data
 
-L’API de prédiction est déployé sur le cloud à cette adresse : https://scoringappp7-8f781cb475fc.herokuapp.com/
+L’API de prédiction est déployé sur le cloud à cette adresse : https://scoringappp7-60437480951c.herokuapp.com/
 
 L'ensemble des packages utilisés est listé dans le fichier requirements.txt
