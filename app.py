@@ -66,7 +66,7 @@ async def predict2(client_id: int):
     """
     This function predicts a customer's creditworthiness based on their identifier.
     """
-    # Check if the client_id exists
+    # Check if the client_id exists.
     if client_id not in data_test_sampled.index:
         raise HTTPException(status_code=404, detail=f"Client ID {client_id} not found in database.")
 
